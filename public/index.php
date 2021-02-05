@@ -119,4 +119,3 @@ var_dump((int)0 === (int)'hello, world'); // Почему true? Потому ч�
   echo $a . '<br>';
   echo $b;
   ?>
-
