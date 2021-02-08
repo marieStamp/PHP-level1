@@ -1,9 +1,10 @@
 <?php
-include ENGINE_DIR . "filesystem.php";
+//include ENGINE_DIR . "filesystem.php";
+ include ENGINE_DIR . "db.php";
 
 function getMenu(): array
 {
-    $menu = [];
+   /* $menu = [];
     $data = readCsv(DB_DIR . 'menu.csv');
     foreach ($data as $row) {
         $menu[] = [
@@ -11,6 +12,8 @@ function getMenu(): array
             'link' => $row[1]
         ];
     }
-    return $menu;
+    return $menu; */
+
+    return query( "SELECT * FROM menu WHERE access = 1");
 }
 ?>
