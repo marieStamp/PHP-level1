@@ -1,0 +1,1 @@
+<img src="/img/<<?php echo ($image['url']); ?>" alt="<?php echo ($image['name']); ?>" width="500">
